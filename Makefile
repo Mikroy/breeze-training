@@ -10,7 +10,7 @@ SRC_DIR=./src
 
 # Flags
 CFLAG=-mcpu=cortex-m4 -mthumb -O2 -Wall -I$(CMSIS_DIR) -I$(HAL_DIR) -I$(INC_DIR)
-LDFLAGS=-T $(SRC_DIR)/linker_script.ld -nostartfiles
+LDFLAGS=-T $(SRC_DIR)/config/ATSAME54P20A.ld -nostartfiles
 
 # Source Files
 SRC_FILES=$(wildcard $(SRC_DIR)/*.c)
