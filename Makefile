@@ -15,6 +15,9 @@ LDFLAGS=-T $(SRC_DIR)/linker_script.ld -nostartfile
 # Source Files
 SRC_FILES=$(wildcard $(SRC_DIR)/*.c)
 
+# PHONY Target
+.PHONY: all clean
+
 # Output
 TARGET=firmware
 
