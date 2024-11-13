@@ -8,11 +8,12 @@ MEMORY
 }
 
 /* Define the entry point */
+/* Run when program starts */
 ENTRY(Reset_Handler)
 
 SECTIONS
 {
-    /* Vector table */
+    /* Interuption vector table */
     .isr_vector :
     {
         KEEP(*(.isr_vector)) /* Interrupt vectors */
@@ -28,12 +29,14 @@ SECTIONS
     } > FLASH
 
     /* Data section */
+    /* Data is copied from FLASH to RAM */
     .data : AT(ADDR(.text) + SIZEOF(.text))
     {
         *(.data*)            /* Initialized data */
     } > RAM
 
     /* BSS section */
+    /* Data is initialized as zero */
     .bss :
     {
         *(.bss*)             /* Uninitialized data */
