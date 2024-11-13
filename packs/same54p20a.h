@@ -22,6 +22,7 @@ extern "C" {
 /* MACROS */
 // APBB Peripherals
 #define NVMCTRL_REGS    ((nvmctrl_registers)0x41004000) // NVMCTRL Register Address
+#define PORT_REGS       ((port_registers)   0x41008000) // PORT Register Address
 
 /* LOCAL VARIABLES (static) */
 /* GLOBAL VARIABLES (global) */

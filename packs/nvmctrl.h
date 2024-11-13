@@ -3,6 +3,7 @@
  * 
  * @brief Define the registers addresses.
  * This file contains the registers of the microcontroller ATSAME54P20A
+ * Note: Register summary on page 613 of datasheet
  * 
  * @author Miguel Ruiz Esparza
  * 
