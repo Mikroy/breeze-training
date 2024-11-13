@@ -15,6 +15,9 @@ LDFLAGS=-T $(SRC_DIR)/config/ATSAME54P20A.ld -nostartfiles
 # Source Files
 SRC_FILES=$(wildcard $(SRC_DIR)/*.c)
 
+# PHONY Target
+.PHONY: all clean
+
 # Output
 TARGET=breeze-training
 
