@@ -16,5 +16,14 @@
 
 int main (void)
 {
+    configure_clock();
+    configure_io();
+    configure_uart();
+    configure_pwm();
+
+    while (1)
+    {
+
+    }
     return 0;
 }
