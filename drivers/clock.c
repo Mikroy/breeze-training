@@ -1,3 +1,5 @@
+//DFLL48M for 48 MHz.
+
 void configure_clock(void) {
     /* Enable OSC32K */
     OSC32KCTRL->XOSC32K.reg = OSC32KCTRL_XOSC32K_ENABLE | OSC32KCTRL_XOSC32K_EN32K;
